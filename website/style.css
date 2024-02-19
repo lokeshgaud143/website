@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0;
+    user-select: none;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    animation-name: bodydrag;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    box-sizing: border-box;
+}
+
+@keyframes bodydrag {
+    from {
+        margin-top: -100%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}
+
+
+::-webkit-scrollbar {
+    background-color: rgb(56, 51, 51);
+    width: 0px;
+    border-radius: 20px;
+}
+
+.logodiv {
+    display: inline-block;
+    width: 30%;
+    padding-left: 30px;
+}
+
+header {
+    width: 100vw;
+    padding: 5px 10px;
+    border-bottom: 1px solid black;
+    display: flex;
+    position: fixed;
+    background-color: white;
+}
+
+.my {
+    font-size: xx-large;
+    font-weight: bold;
+    color: brown;
+    font-family: sans-serif;
+}
+
+.navdiv {
+    padding: 10px;
+    width: 70%;
+    margin-right: 5%;
+    text-align: right;
+}
+
+.navdiv a {
+    color: black;
+    margin-left: 5%;
+    font-weight: 500;
+}
+
+.navdiv a:hover {
+    color: brown;
+}
+
+
+@media (max-width:590px) {
+    .navdiv {
+        display: none;
+    }
+
+    header {
+        position: fixed;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.main_home_div {
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+    background-attachment: fixed;
+
+}
+
+.home1 {
+    padding-top: 30px;
+    height: 100vh;
+    width: 50%;
+}
+
+.home1 img {
+    width: 70%;
+    transition: 2s;
+}
+
+.home1 img:hover {
+    width: 98%;
+}
+
+.home2 {
+    padding-top: 200px;
+    width: 50%;
+    padding-right: 10px;
+}
+
+.home2 h1 {
+    color: gray;
+    font-size: 70px;
+}
+
+.home1 p {
+    font-size: large;
+}
+
+.home2 button {
+    padding: 4px 40px;
+    background-color: gray;
+    border: none;
+    font-size: large;
+    color: aliceblue;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width:985px) {
+    .main_home_div {
+        display: block;
+    }
+
+    .home1 {
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .home2 {
+        padding-top: 10px;
+        width: 100%;
+        text-align: center;
+        padding: 4px;
+    }
+
+    .home2 h1 {
+        font-size: 2.5rem;
+    }
+
+    .download{
+        margin-top: 10px;
+        padding: 4px 10px;
+    }
+}
+
+
+/* Social Section Start */
+
+.Education_level {
+    height: 200px;
+    padding-top: 10px;
+    padding: 30px;
+    background-color: rgb(70, 68, 68);
+}
+.skill_html, .skill_css, .skill_js{
+    color: aliceblue;
+}
+.html{
+    width: 30%;
+    background-color: rgb(103, 95, 95);
+    height: 20px;
+   
+    border-radius: 20px;
+}
+.html_in{
+    width: 90%;
+    background-color: skyblue;
+    height: 20px;
+    border-radius: 20px;
+}
+.css{
+    width: 30%;
+    background-color: rgb(103, 95, 95);
+    height: 20px;
+    border-radius: 20px;
+}
+.css_in{
+    width: 85%;
+    background-color: rgb(235, 202, 135);
+    height: 20px;
+    border-radius: 20px;
+}
+.js{
+    width: 30%;
+    background-color: rgb(103, 95, 95);
+    height: 20px;
+   
+    border-radius: 20px;
+}
+.js_in{
+    width: 60%;
+    background-color: rgb(235, 135, 197);
+    height: 20px;
+    border-radius: 20px;
+}
